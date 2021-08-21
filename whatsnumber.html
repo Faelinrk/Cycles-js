@@ -1,0 +1,47 @@
+﻿<meta charset="utf-8" />
+<script>
+    var asknumb1 = Math.round(Math.random() * 100);
+    var asknumb2 = Math.round(Math.random() * 100);
+
+    alert("Добро пожаловать в игру. Сейчас компьютер загадает вам два случайных числа. Кто первый угадает - победитель. Удачи!");
+
+    var pl1var;
+    var pl2var;
+    
+
+    while (true) {
+        pl1var = + prompt("Игрок 1. Попробуйте угадать число!\nЧтобы сдаться введите число 99999");
+        if (pl1var != 99999) {
+            if (pl1var > asknumb1) {
+                alert("Слишком большое число");
+            } else if (pl1var < asknumb1) {
+                alert("Слишком маленькое число");
+            } else {
+                alert("Игрок 1 победил!");
+                break;
+            }
+        } else {
+            alert("Игрок 2 победил!");
+            break;
+        }
+
+        pl2var = + prompt("Игрок 2. Ваша очередь! Попробуйте угадать число!\nЧтобы сдаться введите число 99999");
+        if (pl2var != 99999) {
+            if (pl2var > asknumb2) {
+                alert("Слишком большое число");
+            } else if (pl2var < asknumb2) {
+                alert("Слишком маленькое число");
+            } else {
+                alert("Игрок 2 победил!");
+                break;
+            }
+        } else {
+            alert("Игрок 1 победил!");
+            break;
+        }
+
+    }
+
+
+
+</script>

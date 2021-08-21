@@ -1,0 +1,15 @@
+﻿<meta charset="utf-8" />
+<script>
+    var amount = +prompt("Введите сумму вклада");
+    var perc = +prompt("Введите процент вклада");
+
+    var form = perc / 100;
+
+    for (i = 1; i <= 5; i++) {
+
+        alert("Вклад на " + i + " год составит: " + (amount + amount*form*i) + " рублей.");
+
+    }
+
+
+</script>
